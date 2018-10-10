@@ -1,6 +1,6 @@
 {
-  "name": "Maydana",
-  "productName": "Maydana",
+  "name": "IZI",
+  "productName": "IZI",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -14,8 +14,8 @@
   },
   "scripts": {
     "start": "electron main.js",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . maydana --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Maydana\"",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=./app/static/img/favicon.ico --prune=true --out=release-builds",
+    "package-win": "electron-packager . maydana --overwrite --asar=true --icon=./app/static/img/favicon.ico --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=IZI --version-string.FileDescription=IZI --version-string.ProductName=\"IZI Software\"",
     "package-linux": "electron-packager . maydana --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds"
   },
   "author": "Matheus Maydana",

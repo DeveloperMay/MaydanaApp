@@ -10,10 +10,17 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({
+      width: 800,
+      height: 600,
+      position: 'center',
+      resizable: false,
+      frame: true,
+      fullscreen: true
+  });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`)
+  mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
